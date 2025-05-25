@@ -17,6 +17,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Dar permissão ao Gradle Wrapper
+        run: chmod +x gradlew
+
       - name: Build with Gradle
         run: ./gradlew build -x test
 
@@ -32,6 +35,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+
+      - name: Dar permissão ao Gradle Wrapper
+        run: chmod +x gradlew
 
       - name: Test with Gradle
         run: ./gradlew test

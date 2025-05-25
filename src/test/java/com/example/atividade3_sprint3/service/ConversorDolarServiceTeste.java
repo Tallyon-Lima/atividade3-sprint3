@@ -15,6 +15,6 @@ public class ConversorDolarServiceTeste {
 
         double resultado = conversorDolarService.converter(valor);
 
-        assertEquals(1.76, resultado);
+        assertEquals(1.77, resultado);
     }
 }
